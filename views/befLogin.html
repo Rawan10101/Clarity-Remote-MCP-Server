@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../public/style.css" />
+</head>
+<body>
+  <div class="center-card fade-in">
+    <h2> Sign in to Your Account</h2>
+    <p class="subtext">Continue securely to connect ChatGPT with your account</p>
+    <form method="POST" action="/login" id="login-form">
+      <button type="button" onclick="window.location='/auth?provider=google'">Login with Google</button>
+      <button type="button" onclick="window.location='/auth/microsoft'">Login with Microsoft</button>
+      <button type="button" onclick="window.location='/auth/facebook'">Login with Facebook</button>
+
+    </form>
+    <p id="error-msg" class="hidden error-text">Invalid credentials</p>
+  </div>
+
+  <script src="../public/script.js"></script>
+</body>
+</html>
